@@ -1,4 +1,5 @@
 import { Heart, Users, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -25,8 +26,18 @@ const About = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      {/* 1 — Company Story */}
-      <section className="section-cream pt-32 pb-24 md:pt-40 md:pb-32">
+      {/* Hero */}
+      <section className="section-burgundy pt-32 pb-24 md:pt-44 md:pb-32 flex items-center justify-center text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-3xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+            This is more than a company.
+            <br />
+            <span className="italic font-medium">This is a calling.</span>
+          </h1>
+        </div>
+      </section>
+      {/* Company Story */}
+      <section className="section-cream py-24 md:py-32">
         <div className="container mx-auto px-4 md:px-8 max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-center">
             Our Story
@@ -99,6 +110,18 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
+      <section className="section-burgundy py-24 md:py-32 text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+            Ready to build something <span className="italic font-medium">that matters?</span>
+          </h2>
+          <Button variant="hero-outline" size="lg">
+            Work With Us
+          </Button>
         </div>
       </section>
 
