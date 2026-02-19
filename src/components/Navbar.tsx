@@ -1,9 +1,17 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/cwg-logo.png";
 
-const navLinks = ["Home", "About", "Products", "Community", "Blog", "Contact"];
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Products", href: "/#products" },
+  { label: "Community", href: "/#community" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Contact", href: "/#contact" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,13 +26,13 @@ const Navbar = () => {
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a
-                href={`#${link.toLowerCase()}`}
+            <li key={link.label}>
+              <Link
+                to={link.href}
                 className="text-cream/80 hover:text-cream font-sans text-sm tracking-wide transition-colors duration-200"
               >
-                {link}
-              </a>
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -48,14 +56,14 @@ const Navbar = () => {
         <div className="md:hidden bg-brand-black/95 backdrop-blur-md border-t border-cream/10 animate-fade-in">
           <ul className="flex flex-col items-center gap-6 py-4">
             {navLinks.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
+              <li key={link.label}>
+                <Link
+                  to={link.href}
                   className="text-cream/80 hover:text-cream font-sans text-lg tracking-wide transition-colors"
                   onClick={() => setOpen(false)}
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               </li>
             ))}
             <li>
