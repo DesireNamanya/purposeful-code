@@ -38,23 +38,38 @@ const About = () => {
       </section>
       {/* Company Story */}
       <section className="section-cream py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-8 max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-center">
-            Our Story
-          </h1>
-          <div className="space-y-6 font-sans text-muted-foreground text-lg leading-relaxed">
-            <p>
-              Coding With God was born from a simple conviction: technology is stewardship. Every tool we build, every line of code we write, carries a responsibility — to safety, to dignity, and to the communities we serve.
-            </p>
-            <p>
-              We started because we saw a gap between what technology <span className="italic">could</span> do and what it <span className="italic">should</span> do. Too often, software is built for extraction — harvesting attention, monetising data, optimising for profit alone. We chose a different path.
-            </p>
-            <p>
-              Rooted in faith and driven by engineering excellence, we set out to build products that solve real-world problems for real people. Products that respect their users. Products that last.
-            </p>
-            <p>
-              From Uganda to the world, Coding With God exists to prove that innovation and integrity are not opposites — they are inseparable.
-            </p>
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+            {/* Left — headline + pull quote */}
+            <div className="md:sticky md:top-40">
+              <p className="font-sans text-sm uppercase tracking-widest text-primary mb-4">Our Story</p>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
+                Why we
+                <br />
+                <span className="italic font-medium">started building.</span>
+              </h2>
+              <div className="border-l-2 border-primary/30 pl-6">
+                <p className="font-serif text-xl md:text-2xl italic text-foreground/70 leading-relaxed">
+                  "We believe every line of code carries a responsibility — to safety, dignity, and opportunity."
+                </p>
+              </div>
+            </div>
+
+            {/* Right — narrative */}
+            <div className="space-y-6 font-sans text-muted-foreground text-lg leading-relaxed">
+              <p>
+                Coding With God was born from a simple conviction: technology is stewardship. Every tool we build, every line of code we write, carries a responsibility — to safety, to dignity, and to the communities we serve.
+              </p>
+              <p>
+                We started because we saw a gap between what technology <span className="italic">could</span> do and what it <span className="italic">should</span> do. Too often, software is built for extraction — harvesting attention, monetising data, optimising for profit alone. We chose a different path.
+              </p>
+              <p>
+                Rooted in faith and driven by engineering excellence, we set out to build products that solve real-world problems for real people. Products that respect their users. Products that last.
+              </p>
+              <p className="text-foreground font-medium">
+                From Uganda to the world, Coding With God exists to prove that innovation and integrity are not opposites — they are inseparable.
+              </p>
+            </div>
           </div>
         </div>
       </section>
