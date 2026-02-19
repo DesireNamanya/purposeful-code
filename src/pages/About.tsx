@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const pillars = [
   {
     icon: Heart,
-    title: "Faith-Led Innovation",
+    title: "Faith Led Innovation",
     description: "We build with conviction and clarity.",
   },
   {
@@ -50,7 +50,7 @@ const About = () => {
               </h2>
               <div className="border-l-2 border-primary/30 pl-6">
                 <p className="font-serif text-xl md:text-2xl italic text-foreground/70 leading-relaxed">
-                  "We believe every line of code carries a responsibility — to safety, dignity, and opportunity."
+                  "We believe every line of code carries a responsibility to safety, dignity, and opportunity."
                 </p>
               </div>
             </div>
@@ -58,16 +58,16 @@ const About = () => {
             {/* Right — narrative */}
             <div className="space-y-6 font-sans text-muted-foreground text-lg leading-relaxed">
               <p>
-                Coding With God was born from a simple conviction: technology is stewardship. Every tool we build, every line of code we write, carries a responsibility — to safety, to dignity, and to the communities we serve.
+                Coding With God was born from a simple conviction: technology is stewardship. Every tool we build, every line of code we write, carries a responsibility to safety, to dignity, and to the communities we serve.
               </p>
               <p>
-                We started because we saw a gap between what technology <span className="italic">could</span> do and what it <span className="italic">should</span> do. Too often, software is built for extraction — harvesting attention, monetising data, optimising for profit alone. We chose a different path.
+                We started because we saw a gap between what technology <span className="italic">could</span> do and what it <span className="italic">should</span> do. Too often, software is built for extraction harvesting attention, monetising data, optimising for profit alone. We chose a different path.
               </p>
               <p>
-                Rooted in faith and driven by engineering excellence, we set out to build products that solve real-world problems for real people. Products that respect their users. Products that last.
+                Rooted in faith and driven by engineering excellence, we set out to build products that solve real world problems for real people. Products that respect their users. Products that last.
               </p>
               <p className="text-foreground font-medium">
-                From Uganda to the world, Coding With God exists to prove that innovation and integrity are not opposites — they are inseparable.
+                From Uganda to the world, Coding With God exists to prove that innovation and integrity are not opposites they are inseparable.
               </p>
             </div>
           </div>
@@ -94,7 +94,7 @@ const About = () => {
                 Vision
               </h2>
               <p className="font-sans text-lg leading-relaxed opacity-80">
-                To redefine what it means to build software — where innovation and faith walk together.
+                To redefine what it means to build software where innovation and faith walk together.
               </p>
             </div>
           </div>
